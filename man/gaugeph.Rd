@@ -1,14 +1,14 @@
 \name{gaugeph}
 \alias{gaugeph}
-\title{gaugeph: Empirical rating curve in a ephemeral stream section}
+\title{gaugeph: Synthetic rating curve in a ephemeral stream section}
 \usage{
 gaugeph(data, L, S, n)
 }
 \description{
-Estimation of the empirical rating curve equation in a ephemeral stream section and plots.
+Estimation of a synthetic rating curve equation (discharge vs stage) in a ephemeral stream section and plots.
 }
 \arguments{
-data: A dataframe containing a topographical section: Section id, distance to stream initial shore in m (L), section depth in m (H)
+data: A dataframe containing a topographical section: Section id, distance to stream initial bankfull in m (L), section depth in m (H)
 
 L: A numeric value: Total stream width in m
 
