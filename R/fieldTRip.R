@@ -175,12 +175,12 @@ sprintf("Gauged flow = %f m3/s; Total section area = %f m2; Mean velocity = %f m
 }
 
 #' @title gaugeph
-#' @description Empirical rating curve in a ephemeral stream section
-#' @param data A dataframe containing a topographical section: Section id, distance to stream initial shore in m (L), section depth in m (H)
+#' @description Synthetic rating curve in an ephemeral stream section
+#' @param data A dataframe containing a topographical section: Section id, distance to stream initial bankfull in m (L), section depth in m (H)
 #' @param L A numeric value: Total stream width in m
 #' @param S A numeric value: Stream reach slope in m/m
 #' @param n A numeric value: Manning roughness coefficient
-#' @return Rating curve equation, area and plots
+#' @return Synthetic rating curve equation, area and plots
 #' @examples gaugeph(data, L, S, n)
 #' @export
 gaugeph <- function(data, L, S, n)
