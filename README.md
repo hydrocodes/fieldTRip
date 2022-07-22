@@ -6,9 +6,9 @@ An R package for processing field point hydrological measurements
 
 - nival: Melting water evolution in a snowpack
 
-- horton: Adjustment to Horton model of a infiltration test
+- horton: Adjustment to Horton model of an infiltration test
 
-- greenampt: Adjustment to Green-Ampt model of a infiltration test
+- greenampt: Adjustment to Green-Ampt model of an infiltration test
 
 - gauges: Stream gauge by Sectional velocity method
 
