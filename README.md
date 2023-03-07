@@ -13,3 +13,5 @@ An R package for processing field point hydrological measurements
 - gauges: Stream gauge by Sectional velocity method
 
 - gaugeph: Synthetic rating curve in an ephemeral stream section
+
+fieldTRip is being developed at UTEC-CITA (Lima), for any query please write to: prau@utec.edu.pe
