@@ -187,10 +187,13 @@ gaugeph <- function(data, L, S, n)
 {h <- data$H
 nr <- length(h)
 Am <- c()
+wp <- c()
 for (i in 2:nr){
   Am[i] <- (h[i]+h[i-1])*(data$L[i]-data$L[i-1])/2
+  wp[i-1] <- sqrt((abs(h[i-1]-h[i]))^2+(data$L[i-1]-data$L[i])^2)
 }
 At <- data$L[1]*h[1]/2 + sum(Am[!is.na(Am)]) + (L-data$L[nr])*h[nr]/2
+wpt <- sum(wp) + sqrt(h[1]^2+data$L[1]^2) + sqrt(h[nr]^2+(L-data$L[nr])^2)
 hm <- At/L
 x <- c(0, data$L, L)
 y <- c(0,-h,0)
@@ -207,5 +210,5 @@ plot(c(x,x1), c(y,y1), type="l", xlab="Width (m)", lwd=2, ylab="Depth (m)", col 
 polygon(c(x,x1), c(y,y1), col = "peru", border=NA)
 points(x,y, pch=16)
 plot(hp*hx/hm,Qp, type="o", lwd=3, col="blue", xlab="Stage (m)",ylab="Discharge (m3/s)")
-sprintf("Rating curve: Discharge = %f*Stage^%f; Full section area = %f m2", a, b, At)
+sprintf("Rating curve: Discharge = %f*Stage^%f; Full section area = %f m2; Sectional length = %f m", a, b, At, wpt)
 }
