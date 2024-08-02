@@ -212,3 +212,58 @@ points(x,y, pch=16)
 plot(hp*hx/hm,Qp, type="o", lwd=3, col="blue", xlab="Stage (m)",ylab="Discharge (m3/s)")
 sprintf("Rating curve: Discharge = %f*Stage^%f; Full section area = %f m2; Sectional length = %f m", a, b, At, wpt)
 }
+
+#' @title wblake
+#' @description A simple lake water balance
+#' @param A A numeric value: Area of the lake in km2
+#' @param P A numeric value: Precipitation during the time dt in mm
+#' @param E A numeric value: Evapotranspiration in mm/hr
+#' @param Qi A numeric value: Input flow in lt/s
+#' @param Qo A numeric value: Output flow in lt/s
+#' @param R A numeric value: Runoff during the time dt in mm
+#' @param K A numeric value: Saturated hydraulic conductivity of the bottom of the lake in mm/hr
+#' @param L A numeric value: Sediment layer width of the bottom of the lake in m
+#' @param H A numeric value: Groundwater head in m (+ to the lake; - from the lake)
+#' @param dt A numeric value: Period of time analyzed in hours
+#' @return Volume change in the lake in m3
+#' @examples wblake(A, P, E, Qi, Qo, R,  K, L, H, dt)
+#' @export
+wblake <- function(A, P, E, Qi, Qo, R,  K, L, H, dt)
+{Gn <- 0.001*K*A*10^6*H*dt/L
+ dV <- P*A*1000 + Qi*3600*dt/1000 - E*A*1000*dt - Qo*3600*dt/1000 + Gn + R*A*1000
+### Balance scheme plot
+plot(NA, xlim=c(-2,2), ylim=c(-2,2), bty="n", axes=F, xlab="", ylab="", main="Lake water balance")
+polygon(-1i^(seq(0,2,l=100)), col="cyan")
+lines(c(-1,1), c(0,0), col="blue", lwd=8) 
+lines(-1i^(seq(0,2,l=100)), col="peru", lwd=8)
+
+x <- c(-0.5, -0.5) 
+y <- c(1.5, 0.5) 
+arrows(x[1], y[1], x[2], y[2]) 
+x <- c(0.5, 0.5) 
+y <- c(1.5, 0.5) 
+arrows(x[2], y[2], x[1], y[1]) 
+x <- c(-1.1, -1.6) 
+y <- c(0, 0) 
+arrows(x[1], y[1], x[2], y[2]) 
+x <- c(1.1, 1.6) 
+y <- c(0, 0) 
+arrows(x[2], y[2], x[1], y[1]) 
+x <- c(1.1, 1.3) 
+y <- c(0.5, 1.5) 
+arrows(x[2], y[2], x[1], y[1]) 
+x <- c(0, 0) 
+y <- c(-1.1, -1.8) 
+if (H<0) {
+  arrows(x[1], y[1], x[2], y[2]) }
+ else {
+  arrows(x[2], y[2], x[1], y[1]) }
+text(-0.5,1.7,paste0("P = ", round(P*A*1000, 1), "\t m³"))
+text(0.5,1.7,paste0("E = ", round(E*A*1000*dt, 1), "\t m³"))
+text(-1.3,0.3,paste0("Qo = ", round(Qo*3600*dt/1000, 1), "\t m³"))
+text(1.3,0.3,paste0("Qi = ", round(Qi*3600*dt/1000, 1), "\t m³"))
+text(1.3,1.7,paste0("R = ", round(R*A*1000, 1), "\t m³"))
+text(0,-2,paste0("Gn = ", round(Gn, 1), "\t m³"))
+text(0,0.2,paste0("dV = ", round(dV, 1), "\t m³"), col="blue")
+return(paste0("Volume change (dV) = ",dV," m3"))
+}
