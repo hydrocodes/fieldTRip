@@ -7,5 +7,5 @@ Maintainer: Pedro Rau <pedro.rau.ing@gmail.com>
 Description: An R package for processing field point hydrological measurements
 License: GPL-3
 Encoding: UTF-8
-LazyData: true
+LazyData: TRUE
 Suggests: knitr
