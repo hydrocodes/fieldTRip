@@ -1,6 +1,5 @@
 # fieldTRip
-An R package for processing field point hydrological measurements
-(beta version)
+An R package for processing field point hydrological measurements.
 
 - prwater: Estimation of potential precipitable water
 
@@ -13,6 +12,20 @@ An R package for processing field point hydrological measurements
 - gauges: Stream gauge by Sectional velocity method
 
 - gaugeph: Synthetic rating curve in an ephemeral stream section
+  
+- wblake: A simple lake water balance 
 
-fieldTRip is being developed at UTEC-CITA (Lima), for any query please write to: prau@utec.edu.pe <p><p>
+Setup:
+
+**Step 1:** In Rstudio, install remotes package from CRAN
+
+**Step 2:** In Rstudio console or on your script, please write
+
+```r
+remotes::install_github("hydrocodes/fieldTRip")
+```
+Outputs:
+
 <img src="https://github.com/hydrocodes/fieldTRip/blob/main/tutorial/fieldtrip_fig1.PNG" width="600">
+
+**fieldTRip** is being developed at UTEC-CITA (Lima), for any query please write to: prau@utec.edu.pe <p><p>
