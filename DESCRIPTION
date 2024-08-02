@@ -1,7 +1,7 @@
 Package: fieldTRip
 Type: Package
 Title: fieldTRip
-Version: 0.1.0
+Version: 1.0
 Author: Pedro Rau
 Maintainer: Pedro Rau <pedro.rau.ing@gmail.com>
 Description: An R package for processing field point hydrological measurements
