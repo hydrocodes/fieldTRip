@@ -39,12 +39,9 @@ Por favor, revisa el folder tutorial con ejemplos de codigos y mas detalles
 
 https://github.com/hydrocodes/fieldTRip/tree/main/tutorial
 
-## 3. Credits / Creditos
-fieldTRip is developed by Pedro Rau at Water Research and Technology Center of Universidad de Ingenieria y Tecnologia (UTEC-CITA, Lima). For any issue or suggestion please write to: prau@utec.edu.pe  
+## 3. Credits
+fieldTRip is developed by Pedro Rau at Water Research and Technology Center of Universidad de Ingenieria y Tecnologia (UTEC-CITA, Lima, Peru). For any issue or suggestion please write to: prau@utec.edu.pe  
 fieldTRip could be not possible without runnning the next softwares: R (R Core Team, 2020), Rstudio (RStudio Team, 2020).
-
-fieldTRip es desarrollado por Pedro Rau en el Centro de Investigacion y Tecnologia del Agua de la Universidad de Ingenieria y Tecnologia (UTEC-CITA, Lima). Para cualquier duda o sugerencia escribir a: prau@utec.edu.pe  
-fieldTRip no seria posible sin ejecutar los siguientes softwares: R (R Core Team, 2020), Rstudio (RStudio Team, 2020).
 
 ## 4. Citation / Citacion
 Rau P. 2024. fieldTRip. An R package for processing field point hydrological measurements. Github repository https://github.com/hydrocodes/fieldTRip
