@@ -4,19 +4,13 @@
 
 [ES] `fieldTRip` es un paquete en R para el procesamiento de mediciones puntuales hidrologicas. Herramienta empleada en el `Taller de R en el rio` e incluye 7 funciones basadas en Maidment (1993).
 
-- `prwater`: Estimation of potential precipitable water / Estimacion del agua precipitable potencial en una columna de aire.
-
-- `nival`: Melting water evolution in a snowpack / Evolucion del derretimiento de una capa de nieve.
-
-- `horton`: Adjustment to the Horton model of an infiltration test / Ajuste al modelo de Horton de una prueba de infiltracion.
-
-- `greenampt`: Adjustment to the Green-Ampt model of an infiltration test / Ajuste al modelo de Green-Ampt de una prueba de infiltracion.
-
-- `gauges`: Stream gauge by Sectional velocity method / Aforo de rio por el metodo de velocidad seccional.
-
-- `gaugeph`: Synthetic rating curve in an ephemeral stream section / Curva de gasto sintetica en una seccion transversal de rio efimero.
-  
-- `wblake`: A simple lake water balance  / Balance simple de agua en un lago
+- `prwater()`: Estimation of potential precipitable water / Estimacion del agua precipitable potencial en una columna de aire.
+- `nival()`: Melting water evolution in a snowpack / Evolucion del derretimiento de una capa de nieve.
+- `horton()`: Adjustment to the Horton model of an infiltration test / Ajuste al modelo de Horton de una prueba de infiltracion.
+- `greenampt()`: Adjustment to the Green-Ampt model of an infiltration test / Ajuste al modelo de Green-Ampt de una prueba de infiltracion.
+- `gauges()`: Stream gauge by Sectional velocity method / Aforo de rio por el metodo de velocidad seccional.
+- `gaugeph()`: Synthetic rating curve in an ephemeral stream section / Curva de gasto sintetica en una seccion transversal de rio efimero.
+- `wblake()`: A simple lake water balance  / Balance simple de agua en un lago
 
 ## 2. Setup / Instalacion
 
