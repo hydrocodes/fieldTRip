@@ -1,4 +1,6 @@
-# fieldTRip
+# fieldTRip: An R package for the estimation of field hydrological variables
+<img src="https://github.com/hydrocodes/fieldTRip/blob/main/tutorial/logo_fieldTRip.PNG" width="200">
+
 ## 1. Description / Descripcion
 [EN] `fieldTRip` is an R package for processing field point hydrological measurements. Tool used in the `R in the river workshop` and includes 7 functions based on Maidment (1993).
 
@@ -36,7 +38,7 @@ fieldTRip is developed by Pedro Rau at Water Research and Technology Center of U
 It could be not possible without runnning the next softwares: R (R Core Team, 2020), Rstudio (RStudio Team, 2020).
 
 ## 4. Citation / Citacion
-Rau P. 2024. fieldTRip. An R package for processing field point hydrological measurements. Github repository https://github.com/hydrocodes/fieldTRip
+Rau P. 2024. R en el río: Procesando datos de geociencias en el terreno. Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo, LatinR, 18-22 Nov.
 
 ## 5. References / Referencias
 Maidment D.R. 1993. Handbook of Hydrology. McGraw Hill. USA.
