@@ -1,4 +1,3 @@
-# fieldTRip: An R package for the estimation of field hydrological variables
 <img src="https://github.com/hydrocodes/fieldTRip/blob/main/tutorial/logo_fieldTRip.PNG" width="200">
 
 ## 1. Description / Descripcion
